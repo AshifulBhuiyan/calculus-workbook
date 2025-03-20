@@ -1,0 +1,70 @@
+%\documentclass{report}
+%\documentclass{book}
+\documentclass[openany]{book} %starts any page instead of odd number
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=3cm} % Set uniform margins
+%General Packages for all
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx} 
+\usepackage{comment}
+
+%Title Packages and commands
+\usepackage{titling}   
+%Enhance
+\usepackage{xcolor}
+\usepackage{tikz}
+%font
+%\usepackage{sansmathfonts}
+\usepackage{href-ul}
+%problems
+\usepackage{multicol}
+\setlength{\columnsep}{40pt}
+
+%Introduction Packages and commands
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\textwidth} % Adjust quote width
+\renewcommand{\epigraphflush}{center} % Center-align quotes
+
+%Problem environment
+%\newtheorem{problem}{Problem}[chapter]
+% Define a custom theorem style for problems
+%\begin{comment}
+\newtheoremstyle{problemstyle} % Name of the style
+  {3pt} % Space above
+  {3pt} % Space below
+  {\normalfont} % Body font (upright)
+  {} % Indent amount
+  {\bfseries} % Theorem head font (bold)
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (empty for default)
+
+% Apply the custom style to the "problem" environment
+\theoremstyle{problemstyle}
+\newtheorem{problem}{}[]
+%end{comment}
+
+
+\begin{document}
+\input{Title/title1.tex}
+
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\input{Introduction/introduction1.tex}
+
+\chapter{Limits}
+\input{Chapters/Limits/limits.tex}
+
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
+\input{Appendix/appendix.tex}
+
+\chapter*{My Formula Sheet}
+\addcontentsline{toc}{chapter}{Formula Sheet}
+\input{Appendix/formula.tex}
+
+
+\end{document}

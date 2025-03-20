@@ -1,0 +1,70 @@
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{tcolorbox}
+\usepackage{enumitem} % For better list control
+% introduction.tex
+\thispagestyle{empty} % Remove header/footer for this page
+\begin{center}
+    \vspace*{2cm} % Top spacing
+    
+    % Title section
+    \textcolor{cyan!70!black}{\Huge\textbf{Problem-Solving Philosophy}} \\[1cm]
+    \rule{0.7\textwidth}{1.5pt} \\[2cm]
+\end{center}
+
+% Strategy Section
+\begin{tcolorbox}[
+    colback=cyan!10,
+    colframe=cyan!70!black,
+    title=\textbf{\faBook~~Learning Strategy},
+    fonttitle=\bfseries\large,
+    arc=4pt,
+    boxsep=0pt,
+    left=6mm,
+    right=6mm
+    ]
+    \begin{enumerate}[leftmargin=*,nosep]
+        \item \textbf{Sequential Approach:} Work through problems in order
+        \item \textbf{Mental First:} Attempt solution without writing first
+        \item \textbf{Write Complete Solutions:} Even for "easy" problems
+        \item \textbf{Stuck?} Study solution → Create your own version
+        \item \textbf{Still Confused?} Flag with \faFlagO~~and seek help
+    \end{enumerate}
+\end{tcolorbox}
+
+\vspace{1.5cm}
+
+% Non-Negotiables Section
+\begin{minipage}{0.8\textwidth}
+    \centering
+    \textbf{\faWarning~~Non-Negotiable Rules} \\[0.5cm]
+    \begin{tabular}{@{}ll@{}}
+        \faBan & Skipping problems \\
+        \faBan & Partial attempts \\
+        \faBan & Solution peeking \\
+    \end{tabular}
+\end{minipage}
+
+\vspace{2cm}
+
+% Quote Section
+\begin{tcolorbox}[
+    colback=gray!15,
+    colframe=gray!60!black,
+    fontupper=\itshape,
+    arc=4pt,
+    boxsep=0pt,
+    left=6mm,
+    right=6mm
+    ]
+    \centering
+    \Large
+    ``The only way to learn mathematics is to do mathematics.'' \\
+    \vspace{0.3cm}
+    \normalfont\small — Paul Halmos \\[0.5cm]
+    \normalsize
+    ``If I give up now, I’m going to regret it.'' \\
+    \small — Monkey D. Luffy
+\end{tcolorbox}
+
+\vfill
